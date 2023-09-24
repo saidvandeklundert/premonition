@@ -96,3 +96,11 @@ def test_lexer_read_identifier(source, expected):
     assert read_identifiers == expected, f"Did not read all the expected identifiers:\nGot:{read_identifiers}\nExpected:{expected}"
 
 
+def test_lex_all_regular_configurations(configurations_regular):
+    """
+    Verify we can lex all regular configurations without throwing any exceptions.
+    """
+    for configuration in configurations_regular:
+        lexer = Lexer(source=configuration)
+        lexer.read_tokens()
+        
