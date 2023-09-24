@@ -5,14 +5,15 @@ from pydantic import BaseModel
 
 class TokenType(str, Enum):
     IDENTIFIER = "IDENTIFIER"
+    COMMENT = "COMMENT"
     EOF = "EOF"
     LEFT_CURLY = "{"
     RIGHT_CURLY = "}"
-    Semicolon = ";"
+    SEMICOLON = ";"
     UNKNOWN = "UNKNOWN"
     LEFT_BRACKET = "["
     RIGHT_BRACKET = "]"
-    POUNT = "#"
+    POUND = "#"
     NEWLINE = "\n"
 
 

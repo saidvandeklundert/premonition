@@ -2,6 +2,28 @@ from src.juniper.lexer.lexer import Lexer
 from src.juniper.lexer.token import TokenType
 import pytest
 
+SOURCE_1  ="""system {
+            host-name myrouter;
+            services {
+                ftp;
+                ssh;
+                telnet;
+                netconf {
+                    ssh;
+                }
+            }
+        }
+"""
+SOURCE_1_LIST = ["system", "{", "host-name", "myrouter;", "services", "{", "ftp;", "ssh;", "telnet;", "netconf", "{", "ssh;", "}", "}", "}", "EOF"]
+
+SOURCE_2 = """system {
+    root-authentication {
+        encrypted-password "$COMPLEXTHASH_)(*@#(&%*)(@#*&%))"; ## SECRET-DATA
+    }
+}"""
+
+SOURCE_2_LIST = [
+    "system", "{", "root-authentication", "{", "encrypted-password", '"$COMPLEXTHASH_)(*@#(&%*)(@#*&%))";', "## SECRET-DATA", "}", "}"]
 
 def test_instantiate_lexer():
     lexer = Lexer(source="some text to lex")
@@ -49,3 +71,28 @@ def test_lexer_read_single_token():
     lexer.next_token()
     
     assert lexer.tokens[0].token_type == TokenType.LEFT_CURLY
+
+
+@pytest.mark.parametrize(
+    "source, expected",
+    [
+        ("  an_identifier and_another_one", ["an_identifier", "and_another_one"]),
+        ('  "*879623542@@p" "@#$llaklk"', ['"*879623542@@p"', '"@#$llaklk"']),
+        ('  word1 word2\nword3\tword4\t\t\t\nword5', ["word1","word2","word3","word4","word5",]),
+        (SOURCE_1, SOURCE_1_LIST),     
+        (SOURCE_2, SOURCE_2_LIST),     
+    ],
+)
+def test_lexer_read_identifier(source, expected):
+    """
+    Verify the lexer can read the expected identifiers.
+    """
+    lexer = Lexer(source=source)
+    lexer.read_tokens()
+    
+    read_identifiers = []
+    for token in lexer.tokens:
+        read_identifiers.append(token.literal)
+    assert read_identifiers == expected, f"Did not read all the expected identifiers:\nGot:{read_identifiers}\nExpected:{expected}"
+
+

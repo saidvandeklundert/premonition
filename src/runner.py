@@ -1,10 +1,21 @@
 # ipython -i .\src\runner.py
 from juniper.lexer.lexer import Lexer
 
-lexer = Lexer(source="  start")
-lexer.read_char()
-lexer.skip_whitespace()
+SOURCE = """system {
+            host-name myrouter;
+            services {
+                ftp;
+                ssh;
+                telnet;
+                netconf {
+                    ssh;
+                }
+            }
+        }
+        """
+lexer = Lexer(source=SOURCE)
+lexer.read_tokens()
 
 
-lexer = Lexer(source="{")
-lexer.next_token()
+for val in lexer.tokens:
+    print(val.literal)
