@@ -1,6 +1,7 @@
-from src.juniper.lexer.lexer import Lexer
-from src.juniper.lexer.token import TokenType
+from src.juniper.lexer import Lexer
+from src.juniper.token import TokenType
 import pytest
+from test.conftest import REGULAR_CONFIGURATIONS
 
 SOURCE_1  ="""system {
             host-name myrouter;
@@ -23,7 +24,7 @@ SOURCE_2 = """system {
 }"""
 
 SOURCE_2_LIST = [
-    "system", "{", "root-authentication", "{", "encrypted-password", '"$COMPLEXTHASH_)(*@#(&%*)(@#*&%))";', "## SECRET-DATA", "}", "}"]
+    "system", "{", "root-authentication", "{", "encrypted-password", '"$COMPLEXTHASH_)(*@#(&%*)(@#*&%))";', "## SECRET-DATA", "}", "}", "EOF"]
 
 def test_instantiate_lexer():
     lexer = Lexer(source="some text to lex")
@@ -76,9 +77,9 @@ def test_lexer_read_single_token():
 @pytest.mark.parametrize(
     "source, expected",
     [
-        ("  an_identifier and_another_one", ["an_identifier", "and_another_one"]),
-        ('  "*879623542@@p" "@#$llaklk"', ['"*879623542@@p"', '"@#$llaklk"']),
-        ('  word1 word2\nword3\tword4\t\t\t\nword5', ["word1","word2","word3","word4","word5",]),
+        ("  an_identifier and_another_one", ["an_identifier", "and_another_one", "EOF"]),
+        ('  "*879623542@@p" "@#$llaklk"', ['"*879623542@@p"', '"@#$llaklk"', "EOF"]),
+        ('  word1 word2\nword3\tword4\t\t\t\nword5', ["word1","word2","word3","word4","word5", "EOF"]),
         (SOURCE_1, SOURCE_1_LIST),     
         (SOURCE_2, SOURCE_2_LIST),     
     ],
@@ -94,13 +95,24 @@ def test_lexer_read_identifier(source, expected):
     for token in lexer.tokens:
         read_identifiers.append(token.literal)
     assert read_identifiers == expected, f"Did not read all the expected identifiers:\nGot:{read_identifiers}\nExpected:{expected}"
+  
 
+@pytest.mark.parametrize(
+    "path",
+    [ (path) for path in REGULAR_CONFIGURATIONS],
+)
+def test_lexer_all_regular_configurations(path):
+    """
+    Verify the lexer can read the expected identifiers.
 
-def test_lex_all_regular_configurations(configurations_regular):
+    Also verifies every token stream ends with an EOF.
     """
-    Verify we can lex all regular configurations without throwing any exceptions.
-    """
-    for configuration in configurations_regular:
-        lexer = Lexer(source=configuration)
-        lexer.read_tokens()
-        
+    with open(path,"rt") as f:
+        configuration = f.read()
+    
+    lexer = Lexer(source=configuration)
+    lexer.read_tokens()
+    
+    assert len(lexer.tokens) >1
+    assert lexer.tokens[-1].token_type == TokenType.EOF
+

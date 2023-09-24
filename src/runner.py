@@ -1,5 +1,6 @@
 # ipython -i .\src\runner.py
-from juniper.lexer.lexer import Lexer
+from juniper.lexer import Lexer
+from juniper.configbuilder import ConfigBuilder
 
 SOURCE = """system {
             host-name myrouter;
@@ -17,5 +18,6 @@ lexer = Lexer(source=SOURCE)
 lexer.read_tokens()
 
 
-for val in lexer.tokens:
-    print(val.literal)
+cb = ConfigBuilder(tokens=lexer.tokens)
+
+cb.read_tokens()

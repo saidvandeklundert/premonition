@@ -4,6 +4,7 @@ from pydantic import BaseModel
 
 
 class TokenType(str, Enum):
+    START = "START"
     IDENTIFIER = "IDENTIFIER"
     COMMENT = "COMMENT"
     EOF = "EOF"
@@ -16,6 +17,12 @@ class TokenType(str, Enum):
     POUND = "#"
     NEWLINE = "\n"
 
+    def __str__(self):
+        return f"TokenType.{self.name}"
+
+    def __repr__(self):
+        return f"TokenType.{self.name}"
+
 
 class Token(BaseModel):
     """
@@ -24,3 +31,9 @@ class Token(BaseModel):
 
     token_type: TokenType
     literal: str
+
+    def __str__(self):
+        return f'Token(token_type={self.token_type}, literal="{self.literal}")'
+
+    def __repr__(self):
+        return f'Token(token_type={self.token_type}, literal="{self.literal}")'

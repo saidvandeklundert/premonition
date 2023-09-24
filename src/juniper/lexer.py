@@ -7,20 +7,6 @@ logging.basicConfig(level=logging.DEBUG)
 LOGGER = logging.getLogger(__name__)
 
 
-def all_identifier_start_characters() -> set[str]:
-    """
-    Returns a set of all characters that could signal the start of an identifier in
-    Juniper configuration statements.
-    """
-    identifier_start = [x for x in string.ascii_lowercase]
-    identifier_start.extend([x for x in string.ascii_uppercase])
-    identifier_start.extend([":", '"', "-", "_", "^", "<", ">", "*", ".", "\\", "/"])
-    return set(identifier_start)
-
-
-IDENTIFIER_START = all_identifier_start_characters()
-
-
 class Lexer(BaseModel):
     source: str
     position: int = 0
@@ -62,9 +48,13 @@ class Lexer(BaseModel):
         LOGGER.debug(f"assigning token to: {character}")
 
         match character:
-            case "end":
-                tok = Token(token_type=TokenType.EOF, literal="EOF")
-            case character if character in IDENTIFIER_START:
+            case "a" | "b" | "c" | "d" | "e" | "f" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "u" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z":
+                identifier = self.read_identifier()
+                tok = Token(token_type=TokenType.IDENTIFIER, literal=identifier)
+            case "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" "V" | "W" | "X" | "Y" | "Z":
+                identifier = self.read_identifier()
+                tok = Token(token_type=TokenType.IDENTIFIER, literal=identifier)
+            case ":" | '"' | "-" | "_" | "^" | "<" | ">" | "*" | "." | "\\" | "/":
                 identifier = self.read_identifier()
                 tok = Token(token_type=TokenType.IDENTIFIER, literal=identifier)
             case "{":
@@ -75,23 +65,18 @@ class Lexer(BaseModel):
                 tok = Token(token_type=TokenType.SEMICOLON, literal=character)
             case "[":
                 tok = Token(token_type=TokenType.LEFT_BRACKET, literal=character)
-
             case "]":
                 tok = Token(token_type=TokenType.RIGHT_BRACKET, literal=character)
-
             case "#":
                 identifier = self.read_comment()
                 tok = Token(token_type=TokenType.COMMENT, literal=identifier)
-
             case "\n":
                 tok = Token(token_type=TokenType.NEWLINE, literal=character)
-
+            case "end":
+                tok = Token(token_type=TokenType.EOF, literal="EOF")
             case _:
-                if True is False:
-                    pass
-                else:
-                    LOGGER.warning(f"unkown token: {character}")
-                    tok = Token(token_type=TokenType.UNKNOWN, literal=character)
+                LOGGER.warning(f"unkown token: {character}")
+                tok = Token(token_type=TokenType.UNKNOWN, literal=character)
 
         self.tokens.append(tok)
 
@@ -127,3 +112,5 @@ class Lexer(BaseModel):
         """
         while self.character != "end":
             self.next_token()
+        if self.tokens[-1].token_type != TokenType.EOF:
+            self.tokens.append(Token(token_type=TokenType.EOF, literal="EOF"))
