@@ -1,0 +1,120 @@
+{
+    "tokens": [
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "replace:"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "chassis"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "aggregated-devices"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "ethernet"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "device-count"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "8;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "cluster"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "control-link-recovery;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "redundancy-group"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "0"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "node"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "0"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "priority"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "254;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "node"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "priority"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "EOF",
+            "literal": "EOF"
+        }
+    ]
+}

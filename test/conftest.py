@@ -6,6 +6,7 @@ PATH = Path(__file__)
 TEST_DIR = PATH.parent
 
 ALL_CONFIGURATION_FILES = glob.glob(str(TEST_DIR) + "/data/configurations/*.txt")
+ALL_TOKEN_FILES = glob.glob(str(TEST_DIR) + "/data/tokens/*.json")
 SET_CONFIGURATIONS = [filepath for filepath in ALL_CONFIGURATION_FILES if "set" in filepath]
 REGULAR_CONFIGURATIONS = [filepath for filepath in ALL_CONFIGURATION_FILES if "set" not in filepath]
 
@@ -48,3 +49,14 @@ def system_tokens():
 
     d = json.loads(token_list)
     return d
+
+
+@pytest.fixture()
+def all_tokens_from_files()->dict:
+    ret = []
+    for path in ALL_TOKEN_FILES:
+        with open(path, "rt") as f:
+            tokens = f.read()
+            tokens_d = json.loads(tokens)
+            ret.append(tokens_d)
+    return ret

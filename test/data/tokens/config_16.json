@@ -1,0 +1,100 @@
+{
+    "tokens": [
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "system"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "host-name"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "router-1;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "root-authentication"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "encrypted-password"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "\"$some_hash\";"
+        },
+        {
+            "token_type": "COMMENT",
+            "literal": "## SECRET-DATA"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "protect:"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "services"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "ftp;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "ssh;"
+        },
+        {
+            "token_type": "COMMENT",
+            "literal": "## some random comment somone put in a Jinja template."
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "telnet;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "netconf"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "ssh;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "EOF",
+            "literal": "EOF"
+        }
+    ]
+}

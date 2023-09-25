@@ -162,4 +162,6 @@ cython_debug/
 install.bat
 run.bat
 run_i.bat
+create_token_files.bat
+config_builder.bat
 private/

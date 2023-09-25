@@ -1,0 +1,124 @@
+{
+    "tokens": [
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "event-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "generate-event"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "ztp-registration"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "time-interval"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "30;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "policy"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "ztp-registration"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "events"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "ztp-registration;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "then"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "execute-commands"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "commands"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "\"op"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "url"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "http://1.1.1.1/some_slax.slax"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "output"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "syslog\";"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "EOF",
+            "literal": "EOF"
+        }
+    ]
+}

@@ -1,0 +1,188 @@
+{
+    "tokens": [
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "security"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "nat"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "source"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "rule-set"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VENDOR_NAT"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "from"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "zone"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VENDOR;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "to"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "zone"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "WAN;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "rule"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VENDOR_NO_NAT_DHCP"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "match"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "source-address"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "25.0.0.0/13;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "destination-address"
+        },
+        {
+            "token_type": "[",
+            "literal": "["
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "100.94.3.159/32"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "100.94.4.192/32"
+        },
+        {
+            "token_type": "]",
+            "literal": "]"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": ";"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "destination-port"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "67;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "then"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "source-nat"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "off;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "EOF",
+            "literal": "EOF"
+        }
+    ]
+}

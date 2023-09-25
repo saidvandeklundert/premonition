@@ -3,7 +3,7 @@ import logging
 from .token import Token, TokenType
 import string
 
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.INFO)
 LOGGER = logging.getLogger(__name__)
 
 
@@ -48,21 +48,24 @@ class Lexer(BaseModel):
         LOGGER.debug(f"assigning token to: {character}")
 
         match character:
-            case "a" | "b" | "c" | "d" | "e" | "f" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "u" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z":
+            case "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "u" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z":
                 identifier = self.read_identifier()
                 tok = Token(token_type=TokenType.IDENTIFIER, literal=identifier)
-            case "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" "V" | "W" | "X" | "Y" | "Z":
+            case "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" | "Y" | "Z":
                 identifier = self.read_identifier()
                 tok = Token(token_type=TokenType.IDENTIFIER, literal=identifier)
-            case ":" | '"' | "-" | "_" | "^" | "<" | ">" | "*" | "." | "\\" | "/":
+            case ":" | '"' | "-" | "_" | "^" | "<" | ">" | "*" | "." | "\\" | "/" | ";":
+                identifier = self.read_identifier()
+                tok = Token(token_type=TokenType.IDENTIFIER, literal=identifier)
+            case "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9":
                 identifier = self.read_identifier()
                 tok = Token(token_type=TokenType.IDENTIFIER, literal=identifier)
             case "{":
                 tok = Token(token_type=TokenType.LEFT_CURLY, literal=character)
             case "}":
                 tok = Token(token_type=TokenType.RIGHT_CURLY, literal=character)
-            case ";":
-                tok = Token(token_type=TokenType.SEMICOLON, literal=character)
+            # case ";":
+            #    tok = Token(token_type=TokenType.SEMICOLON, literal=character)
             case "[":
                 tok = Token(token_type=TokenType.LEFT_BRACKET, literal=character)
             case "]":
@@ -75,7 +78,7 @@ class Lexer(BaseModel):
             case "end":
                 tok = Token(token_type=TokenType.EOF, literal="EOF")
             case _:
-                LOGGER.warning(f"unkown token: {character}")
+                LOGGER.error(f"unkown token: {character}")
                 tok = Token(token_type=TokenType.UNKNOWN, literal=character)
 
         self.tokens.append(tok)
@@ -120,4 +123,6 @@ class Lexer(BaseModel):
         Returns the tokens as JSON, excluding all other fields.
         """
 
-        return self.model_dump_json(exclude="source,character,read_position,position")
+        return self.model_dump_json(
+            exclude="source,character,read_position,position", indent=4
+        )

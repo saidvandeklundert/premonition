@@ -1,6 +1,6 @@
 # ipython -i .\src\runner.py
 from juniper.lexer import Lexer
-from juniper.configbuilder import ConfigBuilder
+from src.juniper.configwriter import ConfigBuilder
 
 SOURCE = """system {
             host-name myrouter;
@@ -28,3 +28,5 @@ token_list = '{"tokens":[{"token_type":"IDENTIFIER","literal":"system"},{"token_
 d = json.loads(token_list)
 
 cb = ConfigBuilder(tokens=d["tokens"])
+
+cb.read_tokens()

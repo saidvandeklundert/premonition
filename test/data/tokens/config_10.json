@@ -1,0 +1,3088 @@
+{
+    "tokens": [
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlans"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN101"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "101;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN102"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "102;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN103"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "103;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN110"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "110;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN310"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "310;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN684"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "684;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN699"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "699;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN700"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "700;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "l3-interface"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "irb.700;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN702"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "702;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN703"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "703;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN704"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "704;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN705"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "705;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN706"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "706;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN708"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "708;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN709"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "709;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN710"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "710;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN711"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "711;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN712"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "712;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN713"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "713;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN740"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "740;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN741"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "741;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN800"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "800;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN801"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "801;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN802"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "802;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN811"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "811;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN812"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "812;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN813"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "813;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN814"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "814;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN815"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "815;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN816"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "816;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN817"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "817;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN818"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "818;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN819"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "819;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN820"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "820;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN821"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "821;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN822"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "822;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN823"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "823;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN826"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "826;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN827"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "827;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN828"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "828;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN829"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "829;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN830"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "830;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN831"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "831;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN833"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "833;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN835"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "835;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN836"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "836;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN837"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "837;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN839"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "839;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN840"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "840;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN841"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "841;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN842"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "842;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN843"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "843;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN844"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "844;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN845"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "845;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN846"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "846;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN847"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "847;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN848"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "848;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN849"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "849;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN850"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "850;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN851"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "851;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN852"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "852;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN854"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "854;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN855"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "855;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN856"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "856;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN857"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "857;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN858"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "858;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN859"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "859;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN860"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "860;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN861"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "861;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN862"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "862;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN863"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "863;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN865"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "865;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN866"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "866;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN867"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "867;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN890"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "890;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN891"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "891;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN892"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "892;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN893"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "893;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN894"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "894;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN895"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "895;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN898"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "898;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN899"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "899;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN900"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "900;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN912"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "912;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN999"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "999;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "forwarding-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "dhcp-security;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "EOF",
+            "literal": "EOF"
+        }
+    ]
+}

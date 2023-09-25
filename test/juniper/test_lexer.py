@@ -129,6 +129,7 @@ def test_lexer_all_regular_configurations(path):
     lexer = Lexer(source=configuration)
     lexer.read_tokens()
     
+
     assert len(lexer.tokens) >1
     assert lexer.tokens[-1].token_type == TokenType.EOF
 

@@ -1,0 +1,96 @@
+{
+    "tokens": [
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "policy-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "policy-statement"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "lb"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "term"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "lb"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "then"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "load-balance"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "per-packet;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "as-path"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "test"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "\"^123"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "456{2,}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "123"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "456{3,}\";"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "EOF",
+            "literal": "EOF"
+        }
+    ]
+}

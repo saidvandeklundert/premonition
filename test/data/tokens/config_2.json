@@ -1,0 +1,1232 @@
+{
+    "tokens": [
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "interfaces"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "ge-0/0/5"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "native-vlan-id"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "706;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "unit"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "0"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "family"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "ethernet-switching"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "interface-mode"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "trunk;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "members"
+        },
+        {
+            "token_type": "[",
+            "literal": "["
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN842"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN841"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN703"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN704"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN900"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN706"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN800"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN802"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN811"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN826"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN828"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN830"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN999"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN839"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN840"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN684"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN846"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN848"
+        },
+        {
+            "token_type": "]",
+            "literal": "]"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": ";"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "ge-0/0/6"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "unit"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "0"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "family"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "ethernet-switching"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "interface-mode"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "access;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "members"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN710;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "ae1"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "description"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "\"Interfaces"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "ae1\";"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "aggregated-ether-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "lacp"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "active;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "periodic"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "slow;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "unit"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "0"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "family"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "ethernet-switching"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "interface-mode"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "trunk;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "members"
+        },
+        {
+            "token_type": "[",
+            "literal": "["
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN101"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN102"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN103"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN110"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN684"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN310"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN699"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN700"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN702"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN703"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN704"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN705"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN706"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN708"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN709"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN710"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN711"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN712"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN713"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN740"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN741"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN800"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN801"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN802"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN811"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN812"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN813"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN814"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN815"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN816"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN817"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN818"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN819"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN820"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN821"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN822"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN823"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN826"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN827"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN828"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN829"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN830"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN831"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN835"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN839"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN840"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN843"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN844"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN848"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN845"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN846"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN850"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN847"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN849"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN851"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN836"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN837"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN899"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN900"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN912"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN999"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN841"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN842"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1001"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1002"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1003"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1004"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1005"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1006"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1007"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1008"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1009"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1010"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1011"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1012"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1013"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1014"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1015"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1016"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1017"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1018"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1019"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1020"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1021"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1022"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1023"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1024"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1025"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1026"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1027"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1028"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1029"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1030"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1031"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1032"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1033"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1034"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1035"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1036"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1037"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1038"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1039"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1040"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1041"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1042"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1043"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1044"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1045"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1046"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1047"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1048"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1049"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1050"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1051"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1052"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1053"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1054"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1055"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1056"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1057"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1058"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1059"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1060"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1061"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1062"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1063"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1064"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1065"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1066"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1067"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1068"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1069"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1070"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1071"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1072"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1073"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1074"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1075"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1076"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1077"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1078"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1079"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1080"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1081"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1082"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1083"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1084"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1085"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1086"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1087"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1088"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1089"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1090"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1091"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1092"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1093"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1094"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1095"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1096"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1097"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1098"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1099"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1100"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1101"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "1102"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN833"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN854"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN855"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN856"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN857"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN858"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN859"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN860"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN891"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN892"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN893"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN895"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN852"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "894"
+        },
+        {
+            "token_type": "]",
+            "literal": "]"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": ";"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "ae2"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "description"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "\"Interfaces"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "ae2\";"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "aggregated-ether-options"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "lacp"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "active;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "periodic"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "slow;"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "unit"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "0"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "family"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "ethernet-switching"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "interface-mode"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "trunk;"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "vlan"
+        },
+        {
+            "token_type": "{",
+            "literal": "{"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "members"
+        },
+        {
+            "token_type": "[",
+            "literal": "["
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN101"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": "VLAN102"
+        },
+        {
+            "token_type": "]",
+            "literal": "]"
+        },
+        {
+            "token_type": "IDENTIFIER",
+            "literal": ";"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "}",
+            "literal": "}"
+        },
+        {
+            "token_type": "EOF",
+            "literal": "EOF"
+        }
+    ]
+}
