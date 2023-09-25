@@ -114,3 +114,10 @@ class Lexer(BaseModel):
             self.next_token()
         if self.tokens[-1].token_type != TokenType.EOF:
             self.tokens.append(Token(token_type=TokenType.EOF, literal="EOF"))
+
+    def tokens_json(self) -> str:
+        """
+        Returns the tokens as JSON, excluding all other fields.
+        """
+
+        return self.model_dump_json(exclude="source,character,read_position,position")

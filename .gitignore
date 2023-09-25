@@ -161,4 +161,5 @@ cython_debug/
 
 install.bat
 run.bat
+run_i.bat
 private/

@@ -1,5 +1,5 @@
 import glob
-
+import json
 from pathlib import Path
 import pytest
 PATH = Path(__file__)
@@ -37,5 +37,14 @@ def configurations_set()->list[str]:
     return configurations
         
 
-#import pdb
-#pdb.set_trace()
+
+@pytest.fixture()
+def system_tokens():
+    """
+    Returns the JSON that represents a list of tokens that describe a small set of the 
+    systems configuration.
+    """
+    token_list = '{"tokens":[{"token_type":"IDENTIFIER","literal":"system"},{"token_type":"{","literal":"{"},{"token_type":"IDENTIFIER","literal":"host-name"},{"token_type":"IDENTIFIER","literal":"myrouter;"},{"token_type":"IDENTIFIER","literal":"services"},{"token_type":"{","literal":"{"},{"token_type":"IDENTIFIER","literal":"ftp;"},{"token_type":"IDENTIFIER","literal":"ssh;"},{"token_type":"IDENTIFIER","literal":"telnet;"},{"token_type":"IDENTIFIER","literal":"netconf"},{"token_type":"{","literal":"{"},{"token_type":"IDENTIFIER","literal":"ssh;"},{"token_type":"}","literal":"}"},{"token_type":"}","literal":"}"},{"token_type":"}","literal":"}"},{"token_type":"EOF","literal":"EOF"}]}'
+
+    d = json.loads(token_list)
+    return d

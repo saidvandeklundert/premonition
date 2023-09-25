@@ -1,7 +1,8 @@
 from src.juniper.lexer import Lexer
-from src.juniper.token import TokenType
+from src.juniper.token import TokenType, Token
 import pytest
 from test.conftest import REGULAR_CONFIGURATIONS
+import json
 
 SOURCE_1  ="""system {
             host-name myrouter;
@@ -30,6 +31,21 @@ def test_instantiate_lexer():
     lexer = Lexer(source="some text to lex")
     
     assert isinstance(lexer, Lexer)
+
+def test_instantiate_lexer():
+    
+    lexer = Lexer(source="some text to lex")
+    
+    
+    
+    lexer.read_tokens()
+    tokens_json = lexer.tokens_json()
+
+    assert isinstance(tokens_json,str)
+
+    d = json.loads(tokens_json)
+    token = Token(**d["tokens"][0])
+    assert isinstance(token,Token)
 
 
 def test_lexer_read_char():
