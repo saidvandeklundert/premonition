@@ -54,7 +54,7 @@ class Lexer(BaseModel):
             case "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" | "Y" | "Z":
                 identifier = self.read_identifier()
                 tok = Token(token_type=TokenType.IDENTIFIER, literal=identifier)
-            case ":" | '"' | "-" | "_" | "^" | "<" | ">" | "*" | "." | "\\" | "/" | ";":
+            case ":" | '"' | "-" | "_" | "^" | "<" | ">" | "*" | "." | "\\" | "/":  # | ";"
                 identifier = self.read_identifier()
                 tok = Token(token_type=TokenType.IDENTIFIER, literal=identifier)
             case "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9":
@@ -64,8 +64,8 @@ class Lexer(BaseModel):
                 tok = Token(token_type=TokenType.LEFT_CURLY, literal=character)
             case "}":
                 tok = Token(token_type=TokenType.RIGHT_CURLY, literal=character)
-            # case ";":
-            #    tok = Token(token_type=TokenType.SEMICOLON, literal=character)
+            case ";":
+                tok = Token(token_type=TokenType.SEMICOLON, literal=character)
             case "[":
                 tok = Token(token_type=TokenType.LEFT_BRACKET, literal=character)
             case "]":
@@ -93,7 +93,12 @@ class Lexer(BaseModel):
 
         while self.character:
             self.read_char()
-            if self.character in [" ", "end", "\n", "\t"]:
+            if self.character in [
+                " ",
+                "end",
+                "\n",
+                "\t",
+            ]:
                 break
         return self.source[position : self.position]
 

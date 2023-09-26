@@ -68,14 +68,14 @@ class ConfigWriter(BaseModel):
                         addition = build_string(
                             self.stanza.stanza_stack_record,
                             self.stanza.config_line_stack,
-                        )
+                        ).replace("set", "deactivate")
                         self.output += addition + "\n"
                         self.stanza.next_inactive = False
                     elif self.stanza.next_protect:
                         addition = build_string(
                             self.stanza.stanza_stack_record,
                             self.stanza.config_line_stack,
-                        )
+                        ).replace("set", "protect")
                         self.output += addition + "\n"
                         self.stanza.next_protect = False
 
@@ -120,20 +120,26 @@ class ConfigWriter(BaseModel):
                         if self.stanza.next_inactive:
                             deactivate = addition.replace("set", "deactivate")
                             self.stanza.next_inactive = False
-                            self.output += addition
-                            self.output += deactivate
+                            self.output += addition + "\n"
+                            self.output += deactivate + "\n"
                         elif self.stanza.next_protect:
                             protect = addition.replace("set", "protect")
                             self.stanza.next_protect = False
-                            self.output += addition
-                            self.output += protect
+                            self.output += addition + "\n"
+                            self.output += protect + "\n"
                         else:
                             self.output += addition + "\n"
                         self.stanza.config_line_stack.clear()
                         self.stanza.stanza_stack.clear()
                     elif self.stanza.inside_bracket_array:
-                        pass
-                    elif statement == "inactive":
+                        self.stanza.config_line_stack.append(statement)
+                        addition = build_string(
+                            self.stanza.stanza_stack_record,
+                            self.stanza.config_line_stack,
+                        )
+                        self.stanza.config_line_stack.pop()
+                        self.output += addition + "\n"
+                    elif statement == "inactive:":
                         self.stanza.next_inactive = True
                     elif statement == "protect:":
                         self.stanza.next_protect = True
@@ -148,11 +154,15 @@ class ConfigWriter(BaseModel):
                     LOGGER.info("comment")
 
                 case TokenType.SEMICOLON:
-                    LOGGER.info("caught EOF")
+                    LOGGER.info("caught SEMICOLON")
 
-                    if self.tokens[self.read_position - 2] == TokenType.RIGHT_BRACKET:
+                    if (
+                        self.tokens[self.read_position - 2].token_type
+                        == TokenType.RIGHT_BRACKET
+                    ):
                         # this means we have a lost ';' after iterating the values
                         # in brackets and we need to wipe the stanza_stack
+
                         self.stanza.stanza_stack.clear()
 
                     self.stanza.config_line_stack.clear()
