@@ -90,16 +90,21 @@ class Lexer(BaseModel):
         Reads an identifier from the Juniper configuration.
         """
         position = self.position
+        if self.character == '"':
+            self.read_char()
+            while self.character != '"':
+                self.read_char()
 
         while self.character:
             self.read_char()
             if self.character in [
                 " ",
-                "end",
                 "\n",
+                "end",
                 "\t",
             ]:
                 break
+
         return self.source[position : self.position]
 
     def read_comment(self) -> str:
@@ -131,3 +136,9 @@ class Lexer(BaseModel):
         return self.model_dump_json(
             exclude="source,character,read_position,position", indent=4
         )
+
+    def peek(self) -> str:
+        """
+        Peek ahead and return the next char.
+        """
+        return self.tokens[self.read_position]

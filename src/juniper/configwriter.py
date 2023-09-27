@@ -152,6 +152,8 @@ class ConfigWriter(BaseModel):
                         LOGGER.debug(f"after: {self.stanza.stanza_stack}")
                 case TokenType.COMMENT:
                     LOGGER.info("comment")
+                    # self.move_past_comment()
+                    pass
 
                 case TokenType.SEMICOLON:
                     LOGGER.info("caught SEMICOLON")
@@ -184,6 +186,33 @@ class ConfigWriter(BaseModel):
         self.read_tokens()
 
         return self.output.strip()
+
+    def move_past_comment(self) -> None:
+        """
+        Process tokens after a pound indicated comment.
+
+        This means that tokens following a pound will be ignored untill
+        one of following tokens appear:
+        - newline
+        - RightSquirly ('}') Tokens
+        - an identifier that can be interpreted as a terminating statment
+        """
+        LOGGER.debug(f"move_past_comment")
+        while True:
+            next_token = self.tokens[self.read_position]
+            LOGGER.debug(f"move_past_comment: {next_token}")
+            if (
+                next_token.token_type == TokenType.NEWLINE
+                or next_token.token_type == TokenType.RIGHT_CURLY
+            ):
+                break
+            if next_token.token_type == TokenType.IDENTIFIER:
+                statement = next_token.literal
+                if statement.endswith(";"):
+                    break
+
+            self.position = self.read_position
+            self.read_position += 1
 
 
 def build_string(
