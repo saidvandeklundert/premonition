@@ -1,1 +1,0 @@
-C:\Programs\Python\Python312\python.exe -i src\run_config_writer.py 

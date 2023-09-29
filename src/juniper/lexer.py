@@ -3,8 +3,10 @@ import logging
 from .token import Token, TokenType
 import string
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.ERROR)
 LOGGER = logging.getLogger(__name__)
+
+WHITESPACES = {" ", "\t", "\n", "\r"}
 
 
 class Lexer(BaseModel):
@@ -35,7 +37,7 @@ class Lexer(BaseModel):
         """
         Skip all characters that contain whitespaces.
         """
-        while self.character in [" ", "\t", "\n", "\r"]:
+        while self.character in WHITESPACES:
             LOGGER.debug("skip white space")
             self.read_char()
 
@@ -48,7 +50,7 @@ class Lexer(BaseModel):
         LOGGER.debug(f"assigning token to: {character}")
 
         match character:
-            case "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "u" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z":
+            case "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z":
                 identifier = self.read_identifier()
                 tok = Token(token_type=TokenType.IDENTIFIER, literal=identifier)
             case "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" | "Y" | "Z":
@@ -97,12 +99,12 @@ class Lexer(BaseModel):
 
         while self.character:
             self.read_char()
-            if self.character in [
+            if self.character in {
                 " ",
                 "\n",
                 "end",
                 "\t",
-            ]:
+            }:
                 break
 
         return self.source[position : self.position]
@@ -115,7 +117,7 @@ class Lexer(BaseModel):
 
         while self.character:
             self.read_char()
-            if self.character in ["\n"]:
+            if self.character in {"\n"}:
                 break
         return self.source[position : self.position]
 

@@ -1,32 +1,10 @@
-# ipython -i .\src\runner.py
-from juniper.lexer import Lexer
-from src.juniper.configwriter import ConfigBuilder
+from pprint import pprint
+from models.device import JuniperDevice
 
-SOURCE = """system {
-            host-name myrouter;
-            services {
-                ftp;
-                ssh;
-                telnet;
-                netconf {
-                    ssh;
-                }
-            }
-        }
-        """
-lexer = Lexer(source=SOURCE)
-lexer.read_tokens()
-
-
-cb = ConfigBuilder(tokens=lexer.tokens)
-
-cb.read_tokens()
-import json
-
-token_list = '{"tokens":[{"token_type":"IDENTIFIER","literal":"system"},{"token_type":"{","literal":"{"},{"token_type":"IDENTIFIER","literal":"host-name"},{"token_type":"IDENTIFIER","literal":"myrouter;"},{"token_type":"IDENTIFIER","literal":"services"},{"token_type":"{","literal":"{"},{"token_type":"IDENTIFIER","literal":"ftp;"},{"token_type":"IDENTIFIER","literal":"ssh;"},{"token_type":"IDENTIFIER","literal":"telnet;"},{"token_type":"IDENTIFIER","literal":"netconf"},{"token_type":"{","literal":"{"},{"token_type":"IDENTIFIER","literal":"ssh;"},{"token_type":"}","literal":"}"},{"token_type":"}","literal":"}"},{"token_type":"}","literal":"}"},{"token_type":"EOF","literal":"EOF"}]}'
-
-d = json.loads(token_list)
-
-cb = ConfigBuilder(tokens=d["tokens"])
-
-cb.read_tokens()
+lldp_config = """set protocols lldp port-description-type interface-description
+set protocols lldp interface all
+set protocols lldp interface me0 disable
+"""
+device = JuniperDevice(hostname="r1", configuration=lldp_config)
+device.build_models()
+print(device.model_dump_json(indent=2, exclude="configuration"))
