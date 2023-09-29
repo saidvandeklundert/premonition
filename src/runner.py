@@ -1,4 +1,4 @@
-from pprint import pprint
+from rich import print
 from models.device import JuniperDevice
 
 lldp_config = """set protocols lldp port-description-type interface-description

@@ -1,26 +1,49 @@
 from pydantic import BaseModel
 from .protocols.lldp import LLDP, LLDPInterface
+from juniper.lexer import Lexer
+from juniper.configwriter import ConfigWriter
 
-
+class DeviceModel(BaseModel):
+    """
+    Vendor agnostic representation of a network node.
+    """
+    lldp:LLDP |None = None
 class Device(BaseModel):
     """
     Model of a device
     """
 
-    hostname: str
+    hostname:str
     configuration: str
-    lldp: LLDP | None = None
+    model:DeviceModel =DeviceModel()
 
+    def show_model(self):
+        return self.model_dump_json(indent=4,exclude="configuration")
 
 class JuniperDevice(Device):
+    """
+    Variant specific for Juniper devices.
+    """
+    configuration_set_style :str|None = None
+
+
+    def show_model(self):
+        return self.model_dump(exclude="configuration,configuration_set_style",exclude_defaults=True)
+    
+    def show_model_json(self):
+        return self.model_dump_json(indent=4,exclude="configuration,configuration_set_style")
+    
     def build_models(self) -> None:
         """
         Build the models from the device configuration.
         """
-
+        lexer = Lexer(source=self.configuration)
+        lexer.read_tokens()
+        cw = ConfigWriter(tokens=lexer.tokens)
+        self.configuration_set_style= cw.build_set_config()
         lldp_model = self.lldp_builder()
 
-        self.lldp = lldp_model
+        self.model.lldp = lldp_model
 
         return None
 
@@ -31,11 +54,11 @@ class JuniperDevice(Device):
         lldp_config = "\n".join(
             [
                 line
-                for line in self.configuration.splitlines()
+                for line in self.configuration_set_style.splitlines()
                 if "set protocols lldp" in line
             ]
         )
-        lldp_model = LLDP(config=lldp_config)
+        lldp_model = LLDP()
 
         for line in lldp_config.splitlines():
             line_parts = line.split()
@@ -62,4 +85,8 @@ def lldp_interface_builder(lldp_model: LLDP, line_parts: list[str]):
             lldp_model.interfaces[lldp_interface_name].enabled = False
         else:
             feature = " ".join(line_parts[5::])
+            if lldp_model.interfaces[lldp_interface_name].features is None:
+                lldp_model.interfaces[lldp_interface_name].features= set()
+            
+  
             lldp_model.interfaces[lldp_interface_name].features.add(feature)

@@ -166,3 +166,4 @@ create_token_files.bat
 config_builder.bat
 private/
 runner copy.py
+cli.bat

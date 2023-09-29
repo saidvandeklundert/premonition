@@ -16,7 +16,6 @@ class LLDP(BaseModel):
     The device LLDP settings.
     """
 
-    config: str
     features: set = set()
     interfaces: dict[str, LLDPInterface] = {}
 
