@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 import logging
-from .token import Token, TokenType
-import string
+from .models.token import Token, TokenType
+
 
 logging.basicConfig(level=logging.ERROR)
 LOGGER = logging.getLogger(__name__)

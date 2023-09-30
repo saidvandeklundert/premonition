@@ -1,6 +1,8 @@
-from src.models.device import JuniperDevice
-from src.juniper.configwriter import ConfigWriter
-from src.juniper.lexer import Lexer
+from premonition.device import JuniperDevice
+from premonition.configwriter import ConfigWriter
+from premonition.lexer import Lexer
+
+
 def test_lldp_configuration():
     configuration = """
     protocols {
@@ -21,16 +23,12 @@ def test_lldp_configuration():
         }
     }    
     """
-    lexer = Lexer(source=configuration)
-    lexer.read_tokens()
-    
-    cb = ConfigWriter(tokens=lexer.tokens)
-    configuration = cb.build_set_config()
+
 
     dev = JuniperDevice(hostname="test-router", configuration=configuration)
     dev.build_models()
     
-    assert dev.lldp.interfaces["all"].enabled is False
-    assert dev.lldp.interfaces["ge-1/1/1"].enabled is True
-    assert "tlv-filter system-name" in dev.lldp.interfaces["xe-1/1/1"].features 
-    assert "ptopo-configuration-maximum-hold-time 300" in dev.lldp.features
+    assert dev.model.lldp.interfaces["all"].enabled is False
+    assert dev.model.lldp.interfaces["ge-1/1/1"].enabled is True
+    assert "tlv-filter system-name" in dev.model.lldp.interfaces["xe-1/1/1"].features 
+    assert "ptopo-configuration-maximum-hold-time 300" in dev.model.lldp.features

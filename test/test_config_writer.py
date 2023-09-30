@@ -1,7 +1,7 @@
-from src.juniper.configwriter import ConfigWriter
+from premonition.configwriter import ConfigWriter
 import pytest
-from src.juniper.token import *
-from src.juniper.lexer import Lexer
+from premonition.models.token import *
+from premonition.lexer import Lexer
 
 from test.conftest import REGULAR_CONFIGURATIONS, SET_CONFIGURATIONS
 

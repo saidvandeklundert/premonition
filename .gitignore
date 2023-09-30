@@ -167,3 +167,6 @@ config_builder.bat
 private/
 runner copy.py
 cli.bat
+private.py
+original.py
+converted.py

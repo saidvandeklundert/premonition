@@ -1,38 +1,51 @@
 from pydantic import BaseModel
-from .protocols.lldp import LLDP, LLDPInterface
-from juniper.lexer import Lexer
-from juniper.configwriter import ConfigWriter
+from premonition import LLDP, LLDPInterface
+from .lexer import Lexer
+from .configwriter import ConfigWriter
+
+
+from premonition import System
+
 
 class DeviceModel(BaseModel):
     """
     Vendor agnostic representation of a network node.
     """
-    lldp:LLDP |None = None
+
+    system: System | None = None
+    lldp: LLDP | None = None
+
+
 class Device(BaseModel):
     """
     Model of a device
     """
 
-    hostname:str
+    hostname: str
     configuration: str
-    model:DeviceModel =DeviceModel()
+    model: DeviceModel = DeviceModel()
 
     def show_model(self):
-        return self.model_dump_json(indent=4,exclude="configuration")
+        return self.model_dump_json(indent=4, exclude="configuration")
+
 
 class JuniperDevice(Device):
     """
     Variant specific for Juniper devices.
     """
-    configuration_set_style :str|None = None
 
+    configuration_set_style: str | None = None
 
     def show_model(self):
-        return self.model_dump(exclude="configuration,configuration_set_style",exclude_defaults=True)
-    
+        return self.model_dump(
+            exclude="configuration,configuration_set_style", exclude_defaults=True
+        )
+
     def show_model_json(self):
-        return self.model_dump_json(indent=4,exclude="configuration,configuration_set_style")
-    
+        return self.model_dump_json(
+            indent=4, exclude="configuration,configuration_set_style"
+        )
+
     def build_models(self) -> None:
         """
         Build the models from the device configuration.
@@ -40,10 +53,10 @@ class JuniperDevice(Device):
         lexer = Lexer(source=self.configuration)
         lexer.read_tokens()
         cw = ConfigWriter(tokens=lexer.tokens)
-        self.configuration_set_style= cw.build_set_config()
+        self.configuration_set_style = cw.build_set_config()
         lldp_model = self.lldp_builder()
-
         self.model.lldp = lldp_model
+        self.system_builder()
 
         return None
 
@@ -70,6 +83,25 @@ class JuniperDevice(Device):
                     lldp_model.features.add(" ".join(line_parts[3::]))
         return lldp_model
 
+    def system_builder(self):
+        system_config = [
+            line
+            for line in self.configuration_set_style.splitlines()
+            if line.startswith("set system")
+        ]
+
+        self.model.system = System()
+        for line in system_config:
+            parts = line.split()
+            # syslog
+            if "set system syslog host" in line and len(parts) >= 4:
+                syslog_server_ip = parts[4]
+                self.model.system.syslog.servers.append(syslog_server_ip)
+            # name-server
+            if "set system name-server" in line and len(parts) >= 4:
+                name_server_ip = parts[3]
+                self.model.system.name_servers.servers.append(name_server_ip)
+
 
 def lldp_interface_builder(lldp_model: LLDP, line_parts: list[str]):
     """
@@ -86,7 +118,6 @@ def lldp_interface_builder(lldp_model: LLDP, line_parts: list[str]):
         else:
             feature = " ".join(line_parts[5::])
             if lldp_model.interfaces[lldp_interface_name].features is None:
-                lldp_model.interfaces[lldp_interface_name].features= set()
-            
-  
+                lldp_model.interfaces[lldp_interface_name].features = set()
+
             lldp_model.interfaces[lldp_interface_name].features.add(feature)

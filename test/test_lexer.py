@@ -1,5 +1,6 @@
-from src.juniper.lexer import Lexer
-from src.juniper.token import TokenType, Token
+from premonition.lexer import Lexer
+from premonition.models.token import TokenType, Token
+
 import pytest
 from test.conftest import REGULAR_CONFIGURATIONS
 import json

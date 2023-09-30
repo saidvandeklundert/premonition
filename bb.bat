@@ -1,2 +1,2 @@
-C:\Programs\Python\Python312\python.exe -m black src/
-C:\Programs\Python\Python312\python.exe -m pytest -vvv --cov=src test/
+C:\Programs\Python\Python312\python.exe -m black premonition/
+C:\Programs\Python\Python312\python.exe -m pytest -vvv -n auto --cov=premonition test/
