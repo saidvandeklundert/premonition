@@ -4,7 +4,7 @@ from .lexer import Lexer
 from .configwriter import ConfigWriter
 
 
-from premonition import System
+from premonition import System, Vlans, Vlan
 
 
 class DeviceModel(BaseModel):
@@ -14,6 +14,7 @@ class DeviceModel(BaseModel):
 
     system: System | None = None
     lldp: LLDP | None = None
+    vlans: Vlans | None = None
 
 
 class Device(BaseModel):
@@ -57,7 +58,7 @@ class JuniperDevice(Device):
         lldp_model = self.lldp_builder()
         self.model.lldp = lldp_model
         self.system_builder()
-
+        self.vlans_builder()
         return None
 
     def lldp_builder(self) -> LLDP:
@@ -101,6 +102,35 @@ class JuniperDevice(Device):
             if "set system name-server" in line and len(parts) >= 4:
                 name_server_ip = parts[3]
                 self.model.system.name_servers.servers.append(name_server_ip)
+            # ntp-server
+            if "set system ntp server" in line and len(parts) >= 4:
+                ntp_server = parts[4]
+                self.model.system.ntp.servers.append(ntp_server)
+
+    def vlans_builder(self):
+        vlans_config = [
+            line
+            for line in self.configuration_set_style.splitlines()
+            if line.startswith("set vlans")
+        ]
+        vlans_model = Vlans()
+        l3_interfaces = {}
+        for line in vlans_config:
+            parts = line.split()
+            if len(parts) == 5 and parts[3] == "vlan-id":
+                vlan_id = int(parts[4])
+                vlan_name = parts[2]
+                vlans_model.vlans[vlan_id] = Vlan(vlan_id=vlan_id, name=vlan_name)
+            elif len(parts) >= 5 and parts[3] == "l3-interface":
+                l3_interface = parts[4]
+                vlan_name = parts[2]
+                l3_interfaces[vlan_name] = l3_interface
+
+        # fill in the collected l3 information:
+        for vlan in vlans_model.vlans.values():
+            if l3_interfaces.get(vlan.name):
+                vlan.layer3_interface = l3_interface
+        self.model.vlans = vlans_model
 
 
 def lldp_interface_builder(lldp_model: LLDP, line_parts: list[str]):

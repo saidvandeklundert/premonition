@@ -2,6 +2,10 @@ from pydantic import BaseModel
 import ipaddress
 
 
+class NTP(BaseModel):
+    servers: list[ipaddress.IPv4Address | ipaddress.IPv6Address] = []
+
+
 class Syslog(BaseModel):
     servers: list[ipaddress.IPv4Address | ipaddress.IPv6Address] = []
 
@@ -17,3 +21,4 @@ class System(BaseModel):
 
     syslog: Syslog = Syslog()
     name_servers: NameServers = NameServers()
+    ntp: NTP = NTP()
